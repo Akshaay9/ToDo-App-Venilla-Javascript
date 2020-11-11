@@ -47,7 +47,7 @@ function deleteTodo(e) {
       const todo = item.parentElement;
       todo.classList.add("fall");
       //at the end
-      removeLocalTodos(todo);
+      
      
         todo.remove();
       
