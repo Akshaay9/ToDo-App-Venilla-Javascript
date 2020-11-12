@@ -63,11 +63,13 @@ form button:hover{
     align-items: center;
     padding: 0px 12px;
     transition: all 0.5s ease;
+    border-radius: 5px;
     
 
 }
 .todo li{
     flex: 1;
+    
    
 }
 .completed-btn, .trash-btn{
