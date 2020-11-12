@@ -2,9 +2,11 @@
 const todoInput = document.querySelector(".todo-input")
 const todoButton = document.querySelector(".todo-button")
 const todoList = document.querySelector(".todo-list")
+const filterOption=document.querySelector(".filter-todo")
 
 // { event listeners}
 todoButton.addEventListener("click", addTodo)
+
 
 // trash delete
 
@@ -46,10 +48,12 @@ function deleteTodo(e) {
       // e.target.parentElement.remove();
       const todo = item.parentElement;
       todo.classList.add("fall");
-      //at the end
-      
-     
+      todo.addEventListener("transitionend",()=>{
         todo.remove();
+      })
+    //   
+  
+        
       
     }
 
@@ -62,3 +66,6 @@ function deleteTodo(e) {
         todo.classList.toggle("completed")
     }
 }
+
+
+  
